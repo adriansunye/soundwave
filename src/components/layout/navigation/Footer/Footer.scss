@@ -1,0 +1,9 @@
+@import "@utils/constants/Scss-variables";
+
+#footer{
+    background-color: $form-background!important;
+    a{
+        text-decoration: none!important;
+        color: white!important;
+    }
+}

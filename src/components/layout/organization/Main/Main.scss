@@ -1,0 +1,12 @@
+@import "@utils/constants/Scss-variables";
+
+.img-landing-girl{
+    height: 70%;
+}
+
+.title-join{
+    font-size: 5rem;
+    span{
+        color: $accent-text;
+    }
+}

@@ -1,0 +1,8 @@
+@import "@utils/constants/Scss-variables";
+
+.btn{
+    background-color: $button-background;
+}
+.btn:hover{
+    background-color: $button-hover;
+}

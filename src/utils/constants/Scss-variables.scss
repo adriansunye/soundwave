@@ -1,0 +1,78 @@
+/********************************
+***            FONTS          ***
+********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+//font-family: 'Poppins', sans-serif;
+
+/********************************
+***       COLOR PALETTE       ***
+********************************/
+
+$general-background: #2F303A;
+$form-background: #202027;
+$nav-hover: #2E3852;
+$border-input: #2E3852;
+$border-input-focus: #596da0;
+$button-background: #1762A7;
+$button-hover: #2180d8;
+$button-focus: #2796ff;
+$accent-text: #AE457E;
+$circle-one: #bc3a801a;
+$circle-two: #3457b21a;
+
+
+/* Media Queries simplified using Sass mixins
+========================================================= */
+
+// a map of breakpoints.
+$breakpoints: (
+    phone: 576px,
+    tablet: 768px,
+    tablet-lg: 992px,
+    desktop: 1200px,
+    desktop-lg: 1400px,
+    desktop-xl: 1600px
+);
+
+// mixin called in place of mediaqueries for-size
+@mixin for-size($breakpoint, $direction:down) {
+    // if the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // determine the direction and then write the media query.
+        @if $direction == up {
+            @media (min-width: $breakpoint-value) {
+                @content;
+            }
+        }
+        @else if $direction == down {
+            @media (max-width: $breakpoint-value) {
+                @content;
+            }
+        }
+    }
+    // if the breakpoint doesn't exist in the map, pass a manual breakpoint
+    @else {
+        @if $direction == up {
+            @media (min-width: $breakpoint) {
+                @content;
+            }
+        }
+        @else if $direction == down {
+            @media (max-width: $breakpoint) {
+                @content;
+            }
+        }
+    }
+}
+
+/********************************
+***       COMMON STYLES       ***
+********************************/
+
+body{
+    background-color: $general-background!important;
+    color:white!important;
+}

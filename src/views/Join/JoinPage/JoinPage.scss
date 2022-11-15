@@ -1,0 +1,20 @@
+@import "@utils/constants/Scss-variables";
+
+.form-container{
+    background-color: $form-background;
+    padding: 10%;
+    border-radius: 20px;
+    input{
+        background-color: $form-background;
+        border-color: $border-input;
+    }
+    input:focus{
+        background-color: $border-input-focus;
+    }
+    button{
+        background-color: $button-background;
+    }
+    button:hover{
+        background-color: $button-hover;
+    }
+}

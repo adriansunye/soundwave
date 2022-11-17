@@ -1,0 +1,11 @@
+@import "@utils/constants/Scss-variables";
+
+#discover {
+    padding-bottom: 10%;
+    background:
+        radial-gradient(circle at 10% 70%, $circle-one, $circle-one 15%, transparent 15%),
+        radial-gradient(circle at 81% 11%, $circle-two, $circle-two 5%, transparent 5%);
+    background-repeat: no-repeat;
+
+    color: white !important;
+}

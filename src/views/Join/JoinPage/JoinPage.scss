@@ -18,3 +18,12 @@
         background-color: $button-hover;
     }
 }
+#join {
+    padding-bottom: 15%;
+    background:
+    radial-gradient(circle at 5% 60%, $circle-one, $circle-one 15%, transparent 15%),
+        radial-gradient(circle at 30% 20%, $circle-two, $circle-two 12%, transparent 12%);
+    background-repeat: no-repeat;
+
+    color: white !important;
+}

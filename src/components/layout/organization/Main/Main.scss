@@ -10,3 +10,17 @@
         color: $accent-text;
     }
 }
+
+.home{
+    @include for-size(tablet-lg,down){
+    margin-top: 50%!important;
+    }
+    h1{
+        font-size: 3rem!important;
+    }
+}
+
+
+
+
+

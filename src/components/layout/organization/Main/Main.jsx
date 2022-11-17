@@ -9,6 +9,7 @@ import { ReactComponent as MoreLogo } from '@assets/Discover/more.svg';
 import { Link } from "react-router-dom";
 import JoinForm from '@views/Join/JoinForm/JoinForm';
 
+
 import './Main.scss';
 
 
@@ -25,10 +26,10 @@ export class Main extends React.Component {
         switch (params.id) {
             case "home":
                 return <>
-                    <div className="col-md-6 mt-5">
+                    <div className="col-md-6 mt-5 d-none d-md-block">
                         <img src={LandingGirl} alt="Girl listening to music" className="img-fluid"></img>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center flex-column gap-3">
+                    <div className="home col-md-6 d-flex justify-content-center flex-column gap-3">
                         <h1>Feel The Music</h1>
                         <h2>Stream Over 2 Million songs with one click</h2>
                         <div className="mt-3">
@@ -39,23 +40,23 @@ export class Main extends React.Component {
                 </>
             case "discover":
                 return <>
-                    <div className="col-md-6 d-flex justify-content-center flex-column gap-3">
+                    <div className="col-md-6 d-flex justify-content-center flex-column gap-3 ">
                         <h1>Discover new music</h1>
-                        <div className="d-flex flex-row">
-                            <div className="p-2 bd-highlight">
+                        <div className="d-flex flex-row gap-3">
+                            <div className="px-3 pt-3 bd-highlight bg-dark">
                                 <div className="d-flex flex-column">
                                     <MicrophoneLogo />
                                     <p>Charts</p>
                                 </div>
                             </div>
-                            <div className="p-2 bd-highlight">
+                            <div className="px-3 pt-3 bd-highlight bg-dark">
                                 <div className="d-flex flex-column">
                                     <AlbumsLogo />
                                     <p>Albums</p>
                                 </div>
                             </div>
-                            <div className="p-2 bd-highlight">
-                                <div className="d-flex flex-column">
+                            <div className="px-3 pt-3 bd-highlight bg-dark">
+                                <div className=" d-flex flex-column">
                                     <MoreLogo />
                                     <p>More</p>
                                 </div>
@@ -82,11 +83,10 @@ export class Main extends React.Component {
         }
     }
 
-
     render() {
         return (<>
-            <main role="main" id="content">
-                <div class="container">
+            <main role="main" id={this.props.id}>
+                <div class="container px-5">
                     <div class="row">
                         {this.renderSwitch(this.props)}
                     </div>

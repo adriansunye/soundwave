@@ -11,7 +11,7 @@ import Discover from '@views/Discover/Discover';
 import Join from '@views/Join/JoinPage/JoinPage';
 import ErrorPage from '@views/ErrorPage/ErrorPage';
 
-export default class PrivateRoute extends React.Component {
+export default class PublicRoute extends React.Component {
     render() {
       return (
         <Router>

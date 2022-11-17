@@ -1,10 +1,10 @@
-import PrivateRoute from '@components/routing/PrivateRoute/PrivateRoute';
+import PublicRoute from '@components/routing/PublicRoute/PublicRoute';
 import './App.scss';
 
 function App() {
   return (
     <>
-      <PrivateRoute/>
+      <PublicRoute/>
     </>
   );
 }

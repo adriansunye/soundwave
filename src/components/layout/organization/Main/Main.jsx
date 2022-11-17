@@ -7,7 +7,9 @@ import { ReactComponent as MoreLogo } from '@assets/Discover/more.svg';
 //import Button from 'react-bootstrap/Button';
 //import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 import JoinForm from '@views/Join/JoinForm/JoinForm';
+//import JoinForm from '../../../../views/Join/JoinForm/JoinForm';
 
 
 import './Main.scss';
